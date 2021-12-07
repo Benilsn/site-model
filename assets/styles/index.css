@@ -7,26 +7,43 @@ body.bg {
     background-color: rgba(240, 182, 225, 0.5);
     background-image: url("");
     background-attachment: fixed;
+    font-size: 1.4rem;
+    width: 1600px;
 }
+
 
 nav.menu {
     position:absolute;
     width: 100%;
+    height: fit-content;
     background-color: black;
 }
 
+.menu img {
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    right: 0;
+}
+
+.menu img:hover {
+    background-color: rgb(238, 231, 236);
+    color: white;
+}
+
 .menu li {
+    height: 2rem;
     float: left;
     list-style: none;
     letter-spacing: 0.2rem;
     padding-inline: 2rem;   
-    font-size: 1.8rem;
     position: relative;
-    
+    padding-top: 1rem;
 }
 
 .menu li ul{
     position: absolute;
+    left: 2%;
     display: none;
 }
 
@@ -49,5 +66,5 @@ nav.menu {
     background-color: black;
     border:1px solid #c0c0c0;
     display:block;
-    width:150px;
+    width:6rem;
 }
